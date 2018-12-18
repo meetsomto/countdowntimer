@@ -1,0 +1,42 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>JS Timer</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="timer.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto|Poppins" rel="stylesheet">
+       
+    </head>
+    <body>
+<!--        container for timer buttons, form and display-->
+        <div class='timer'>
+<!--            container for buttons and form-->
+            <div class='timer__controls navigation-bar'>
+                <button data-time='30' class='timer__button'>30 Secs</button>
+                <button data-time='60' class='timer__button'>1 min</button>
+                <button data-time='300' class='timer__button'>5 mins</button>
+                <button data-time='1800' class='timer__button'>30 mins</button>
+                <button data-time='3600' class='timer__button'>1 hour</button>
+                <form name='customForm' id='custom'>
+                    <input type='text' name='minutes' placeholder='Enter Minutes in Digits'>
+                </form>
+            </div>
+<!--       timer display for time left and end time-->
+            <div class='display'>
+                <h1 class='display__time-left'></h1>
+                <p class='display__end-time'></p> 
+            </div>
+        </div>
+        <footer>
+            <p class="bottom">#teamCLONE</p>
+        </footer>
+        
+        
+        <script src="timer.js"></script>
+        
+        
+        
+        
+    </body>
+</html>
